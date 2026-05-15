@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import ProductsAdmin from "./pages/admin/Products.jsx";
+import AboutPage from "./pages/AboutPage";
+import Contact from "./pages/Contact";
+import WhatsAppButton from "./components/WhatsappButton";
+import Login from "./pages/admin/Login.jsx";
+import Footer from "./components/Footer.jsx";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="w-full min-h-screen overflow-x-hidden">
+
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<ProductsAdmin />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+
+        <Footer />
+        <WhatsAppButton />
+
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
