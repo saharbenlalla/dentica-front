@@ -11,6 +11,7 @@ export default function Hero() {
       <img
         src={img}
         className="absolute w-full h-full object-cover"
+        alt="Dentica hero"
       />
 
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-black/60"></div>

@@ -39,6 +39,7 @@ export default function Contact() {
           <img
   src={logo}
   className="rounded-2xl shadow-2xl w-full max-w-sm object-cover mx-auto"
+  alt="Contact Dentica"
 />
           {/* INFO BOX */}
           <div className="bg-white/10 p-5 rounded-xl space-y-3 backdrop-blur-md">
