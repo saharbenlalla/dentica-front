@@ -31,7 +31,7 @@ export default function Products() {
       <div className="text-center py-16 bg-gradient-to-r from-blue-900 to-blue-600 text-white">
         <h1 className="text-4xl font-bold">Nos Produits</h1>
         <p className="mt-2 text-gray-200">
-          Qualité professionnelle pour dentistes
+          Qualité professionnelle pour dentistes et Laboratoires Dentaires.
         </p>
       </div>
 
