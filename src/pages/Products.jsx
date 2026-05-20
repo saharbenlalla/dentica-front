@@ -50,7 +50,6 @@ export default function Products() {
               whileHover={{ scale: 1.05 }}
               className="bg-white rounded-2xl shadow-lg overflow-hidden"
             >
-              <h1 className="text-red-500 text-5xl">TEST IMAGE</h1>
               {/* IMAGE */}
               {p.image && (
                 <img
