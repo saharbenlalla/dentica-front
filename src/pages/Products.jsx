@@ -63,7 +63,6 @@ export default function Products() {
 
               <div className="p-5">
                 <h3 className="font-bold text-lg">{p.title}</h3>
-              <h1 className="text-red-500 text-5xl">TEST IMAGE</h1>
                 <p className="text-blue-600 font-semibold mt-2">
                   {p.price}
                 </p>
